@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated seff2java_ast -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.somox.seff2javaast.presentation.Seff2methodModelWizardID"
+            name="%_UI_Seff2methodModelWizard_label"
+            class="org.somox.seff2javaast.presentation.Seff2methodModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Seff2methodModelFile.gif">
+         <description>%_UI_Seff2methodModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated seff2java_ast -->
+      <editor
+            id="org.somox.seff2javaast.presentation.Seff2methodEditorID"
+            name="%_UI_Seff2methodEditor_label"
+            icon="icons/full/obj16/Seff2methodModelFile.gif"
+            extensions="seff2method"
+            class="org.somox.seff2javaast.presentation.Seff2methodEditor"
+            contributorClass="org.somox.seff2javaast.presentation.Seff2methodActionBarContributor">
+      </editor>
+   </extension>
+</plugin>
